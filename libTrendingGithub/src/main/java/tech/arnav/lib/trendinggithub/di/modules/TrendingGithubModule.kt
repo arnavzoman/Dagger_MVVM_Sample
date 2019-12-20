@@ -5,7 +5,6 @@ import dagger.Provides
 import retrofit2.Retrofit
 import tech.arnav.lib.trendinggithub.services.TrendingGithubNow
 import javax.inject.Named
-import javax.inject.Singleton
 
 /**
  * created by championswimmer on 2019-12-20
