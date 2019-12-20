@@ -12,8 +12,8 @@ data class Repository(
     @Json(name = "currentPeriodStars") val currentPeriodStars: Int,
     @Json(name = "description") val description: String,
     @Json(name = "forks") val forks: Int,
-    @Json(name = "language") val language: String,
-    @Json(name = "languageColor") val languageColor: String,
+    @Json(name = "language") val language: String?,
+    @Json(name = "languageColor") val languageColor: String?,
     @Json(name = "name") val name: String,
     @Json(name = "stars") val stars: Int,
     @Json(name = "url") val url: String
