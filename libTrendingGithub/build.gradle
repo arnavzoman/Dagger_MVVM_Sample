@@ -25,3 +25,9 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
 }
+
+sourceSets {
+    generated{
+        java.srcDir "${projectDir}/build/generated/source/kapt/main"
+    }
+}

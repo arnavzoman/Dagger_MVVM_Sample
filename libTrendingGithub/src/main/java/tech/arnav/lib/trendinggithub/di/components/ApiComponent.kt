@@ -4,6 +4,7 @@ import dagger.Component
 import tech.arnav.lib.trendinggithub.di.modules.ApiModule
 import tech.arnav.lib.trendinggithub.di.modules.TrendingGithubModule
 import tech.arnav.lib.trendinggithub.services.TrendingGithubNow
+import javax.inject.Singleton
 
 /**
  * created by championswimmer on 2019-12-20
@@ -15,9 +16,8 @@ import tech.arnav.lib.trendinggithub.services.TrendingGithubNow
         ApiModule::class
     ]
 )
+@Singleton
 interface ApiComponent {
-
-    fun inject(obj: Any)
 
     fun getTrendingGithubNowService(): TrendingGithubNow
 }

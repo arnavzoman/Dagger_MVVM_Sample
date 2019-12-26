@@ -22,6 +22,7 @@ class ApiModule {
     }
 
     @Provides
+    @Singleton
     fun provideRetrofitInstance(@Named("ApiBaseUrl") baseUrl: String): Retrofit {
         return Retrofit.Builder()
             .baseUrl(baseUrl)
